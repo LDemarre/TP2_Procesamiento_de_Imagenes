@@ -30,7 +30,7 @@ El resultado se mostrará en una ventana de gráficos y se cerrará cuando usted
 
 ## Ejecución del Problema_2
 
-El archivo "Problema_2.py" se utiliza detectar patentes de los vehículos. Para ejecutarlo, siga estos pasos:
+El archivo "Problema_2.py" se utiliza para detectar patentes en los vehículos. Para ejecutarlo, siga estos pasos:
 
 * Asegúrese de que las imágenes de entrada estén en la carpeta "Imagenes" ya que se utilizará la dirección relativa para acceder a ellas. Puede cambiar los nombres de las imágenes o ajustar la ruta en el archivo si es necesario.
 
@@ -39,7 +39,7 @@ El archivo "Problema_2.py" se utiliza detectar patentes de los vehículos. Para 
 * Ejecute el siguiente comando para ejecutar el script:
 `python Problema_2.py`
 
-El script procesará cada una de las imágenes y mostrará una a una la imagen original con el recuadro de la patente detectada.
+El script procesará cada una de las imágenes y mostrará una a una la imagen original con el recuadro de la patente detectada, para ir pasando de imagen en imagen, tiene que cerrar la anterior.
 
 ## Advertencias
 
