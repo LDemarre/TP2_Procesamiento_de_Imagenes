@@ -9,7 +9,7 @@ todas = ['img01.png', 'img02.png', 'img03.png', 'img04.png', 'img05.png', 'img06
 
 for imagen in funciona_con:
     # Cargar la imagen a colores
-    img = cv2.imread(f'Ejercicio 2/Patentes/{imagen}', cv2.IMREAD_COLOR)
+    img = cv2.imread(f'Imagenes/{imagen}', cv2.IMREAD_COLOR)
         
     # Convertir imagen a escala de grises
     img_gris = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # Cargamos la imagen a colores
-img = cv2.imread('Ejercicio 1/monedas.jpg', cv2.IMREAD_COLOR)
+img = cv2.imread('Imagenes/monedas.jpg', cv2.IMREAD_COLOR)
 
 # Convertimos imagen a escala de grises
 img_gris = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -102,8 +102,7 @@ for i in range(1, num_labels):
                 contador_numeros += 1 
         
         # Escribimos el número en la imagen
-        img_clasificada = cv2.putText(img_clasificada, str(contador_numeros), (stats[i, cv2.CC_STAT_LEFT]+20, stats[i, cv2.CC_STAT_TOP]+150), cv2.FONT_HERSHEY_SIMPLEX, 5, (255, 0, 0), 10)
-        plt.figure(), plt.imshow(img_clasificada), plt.axis('off'), plt.savefig('nombre_de_archivo.png', bbox_inches='tight', pad_inches=0), plt.show()   
+        img_clasificada = cv2.putText(img_clasificada, str(contador_numeros), (stats[i, cv2.CC_STAT_LEFT]+20, stats[i, cv2.CC_STAT_TOP]+150), cv2.FONT_HERSHEY_SIMPLEX, 5, (255, 0, 0), 10)  
 
 # Escribimos sobre la imagen la cantidad de monedas y dados detectados
 img_clasificada = cv2.putText(img_clasificada, f'Cantidad de monedas: {cantidad_monedas}', (140,2100), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 0), 8)
